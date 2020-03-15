@@ -1,0 +1,35 @@
+{
+  "name": "unistyle",
+  "version": "1.0.0",
+  "description": "css utilities for h5 and mini-program",
+  "main": "unistyle.min.css",
+  "scripts": {
+    "build": "npm run build:full && npm run build:min",
+    "build:min": "sass --style=compressed ./unistyle.scss ./dist/unistyle.min.css",
+    "build:full": "sass ./unistyle.scss ./dist/unistyle.css",
+    "build-mp": "npm run build-mp:full && npm run build-mp:min",
+    "build-mp:min": "sass --style=compressed ./unistyle.mp.scss ./dist/unistyle.min.css",
+    "build-mp:full": "sass ./unistyle.mp.scss ./dist/unistyle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamwang/unistyle.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "utility",
+    "h5",
+    "mp",
+    "mini-program"
+  ],
+  "author": "liamwang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liamwang/unistyle/issues"
+  },
+  "homepage": "https://github.com/liamwang/unistyle#readme",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
+}

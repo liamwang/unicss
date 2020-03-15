@@ -1,0 +1,5 @@
+@each $value in (visible, hidden) {
+  .#{$prefix}#{$value} {
+    visibility: $value;
+  }
+}

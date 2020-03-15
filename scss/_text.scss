@@ -1,0 +1,31 @@
+.#{$prefix}text {
+  @each $value in (center, left, right, justify) {
+    &-#{$value} {
+      text-align: $value;
+    }
+  }
+
+  @each $value in (underline, overline, line-through) {
+    &-#{$value} {
+      text-decoration: $value;
+    }
+  }
+
+  @each $value in (capitalize, uppercase, lowercase) {
+    &-#{$value} {
+      text-transform: $value;
+    }
+  }
+
+  &-break {
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+}
+
+.#{$prefix}ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}

@@ -1,0 +1,35 @@
+$border-radiuses: ((0, 0) (sm, 0.125rem) (md, 0.25rem) (lg, 0.5rem) (full, 50%) (pill, 99999px)) !default;
+$border-width-unit: px !default;
+$border-width-values: (1, 2, 3, 4, 5) !default;
+
+.#{$prefix}bd {
+  border: 1 + $border-width-unit solid;
+
+  @each $abbr, $prop in $sides {
+    &-#{$abbr} {
+      border-#{$prop}: 1 + $border-width-unit solid;
+    }
+  }
+
+  @each $value in $border-width-values {
+    &-#{$value} {
+      border-width: $value + $border-width-unit;
+    }
+  }
+
+  @each $value in (solid, dotted, dashed) {
+    &-#{$value} {
+      border-style: $value;
+    }
+  }
+
+  @each $name, $value in $border-radiuses {
+    &-radius-#{$name} {
+      border-radius: $value;
+    }
+  }
+
+  &-none {
+    border: none;
+  }
+}
