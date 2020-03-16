@@ -16,7 +16,7 @@ $measures: (
   vh: vh,
   rem: rem,
   em: em,
-  \%: '%'
+  pct: '%'
 ) !default;
 
 $border-radiuses: ((0, 0) (sm, 0.125rem) (md, 0.25rem) (lg, 0.5rem) (full, 50%) (pill, 99999px)) !default;

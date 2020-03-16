@@ -804,34 +804,34 @@
 .w-0 {
   width: 0;
 }
-.w-1\/2 {
+.w-1d2 {
   width: 50%;
 }
-.w-1\/3 {
+.w-1d3 {
   width: 33.33333%;
 }
-.w-2\/3 {
+.w-2d3 {
   width: 66.66667%;
 }
-.w-1\/4 {
+.w-1d4 {
   width: 25%;
 }
-.w-3\/4 {
+.w-3d4 {
   width: 75%;
 }
-.w-1\/5 {
+.w-1d5 {
   width: 20%;
 }
-.w-2\/5 {
+.w-2d5 {
   width: 40%;
 }
-.w-3\/5 {
+.w-3d5 {
   width: 60%;
 }
-.w-4\/5 {
+.w-4d5 {
   width: 80%;
 }
-.w-1\/6 {
+.w-1d6 {
   width: 16.66667%;
 }
 .w-full {
@@ -847,34 +847,34 @@
 .h-0 {
   height: 0;
 }
-.h-1\/2 {
+.h-1d2 {
   height: 50%;
 }
-.h-1\/3 {
+.h-1d3 {
   height: 33.33333%;
 }
-.h-2\/3 {
+.h-2d3 {
   height: 66.66667%;
 }
-.h-1\/4 {
+.h-1d4 {
   height: 25%;
 }
-.h-3\/4 {
+.h-3d4 {
   height: 75%;
 }
-.h-1\/5 {
+.h-1d5 {
   height: 20%;
 }
-.h-2\/5 {
+.h-2d5 {
   height: 40%;
 }
-.h-3\/5 {
+.h-3d5 {
   height: 60%;
 }
-.h-4\/5 {
+.h-4d5 {
   height: 80%;
 }
-.h-1\/6 {
+.h-1d6 {
   height: 16.66667%;
 }
 .h-full {
@@ -1365,7 +1365,7 @@
 .top-0-em {
   top: 0em;
 }
-.top-0-\% {
+.top-0-pct {
   top: 0%;
 }
 
@@ -1384,7 +1384,7 @@
 .top-5-em {
   top: 5em;
 }
-.top-5-\% {
+.top-5-pct {
   top: 5%;
 }
 
@@ -1403,7 +1403,7 @@
 .top-10-em {
   top: 10em;
 }
-.top-10-\% {
+.top-10-pct {
   top: 10%;
 }
 
@@ -1422,7 +1422,7 @@
 .top-15-em {
   top: 15em;
 }
-.top-15-\% {
+.top-15-pct {
   top: 15%;
 }
 
@@ -1441,7 +1441,7 @@
 .top-20-em {
   top: 20em;
 }
-.top-20-\% {
+.top-20-pct {
   top: 20%;
 }
 
@@ -1460,7 +1460,7 @@
 .top-25-em {
   top: 25em;
 }
-.top-25-\% {
+.top-25-pct {
   top: 25%;
 }
 
@@ -1479,7 +1479,7 @@
 .top-30-em {
   top: 30em;
 }
-.top-30-\% {
+.top-30-pct {
   top: 30%;
 }
 
@@ -1498,7 +1498,7 @@
 .top-35-em {
   top: 35em;
 }
-.top-35-\% {
+.top-35-pct {
   top: 35%;
 }
 
@@ -1517,7 +1517,7 @@
 .top-40-em {
   top: 40em;
 }
-.top-40-\% {
+.top-40-pct {
   top: 40%;
 }
 
@@ -1536,7 +1536,7 @@
 .top-45-em {
   top: 45em;
 }
-.top-45-\% {
+.top-45-pct {
   top: 45%;
 }
 
@@ -1555,7 +1555,7 @@
 .top-50-em {
   top: 50em;
 }
-.top-50-\% {
+.top-50-pct {
   top: 50%;
 }
 
@@ -1574,7 +1574,7 @@
 .left-0-em {
   left: 0em;
 }
-.left-0-\% {
+.left-0-pct {
   left: 0%;
 }
 
@@ -1593,7 +1593,7 @@
 .left-5-em {
   left: 5em;
 }
-.left-5-\% {
+.left-5-pct {
   left: 5%;
 }
 
@@ -1612,7 +1612,7 @@
 .left-10-em {
   left: 10em;
 }
-.left-10-\% {
+.left-10-pct {
   left: 10%;
 }
 
@@ -1631,7 +1631,7 @@
 .left-15-em {
   left: 15em;
 }
-.left-15-\% {
+.left-15-pct {
   left: 15%;
 }
 
@@ -1650,7 +1650,7 @@
 .left-20-em {
   left: 20em;
 }
-.left-20-\% {
+.left-20-pct {
   left: 20%;
 }
 
@@ -1669,7 +1669,7 @@
 .left-25-em {
   left: 25em;
 }
-.left-25-\% {
+.left-25-pct {
   left: 25%;
 }
 
@@ -1688,7 +1688,7 @@
 .left-30-em {
   left: 30em;
 }
-.left-30-\% {
+.left-30-pct {
   left: 30%;
 }
 
@@ -1707,7 +1707,7 @@
 .left-35-em {
   left: 35em;
 }
-.left-35-\% {
+.left-35-pct {
   left: 35%;
 }
 
@@ -1726,7 +1726,7 @@
 .left-40-em {
   left: 40em;
 }
-.left-40-\% {
+.left-40-pct {
   left: 40%;
 }
 
@@ -1745,7 +1745,7 @@
 .left-45-em {
   left: 45em;
 }
-.left-45-\% {
+.left-45-pct {
   left: 45%;
 }
 
@@ -1764,7 +1764,7 @@
 .left-50-em {
   left: 50em;
 }
-.left-50-\% {
+.left-50-pct {
   left: 50%;
 }
 
@@ -1783,7 +1783,7 @@
 .bottom-0-em {
   bottom: 0em;
 }
-.bottom-0-\% {
+.bottom-0-pct {
   bottom: 0%;
 }
 
@@ -1802,7 +1802,7 @@
 .bottom-5-em {
   bottom: 5em;
 }
-.bottom-5-\% {
+.bottom-5-pct {
   bottom: 5%;
 }
 
@@ -1821,7 +1821,7 @@
 .bottom-10-em {
   bottom: 10em;
 }
-.bottom-10-\% {
+.bottom-10-pct {
   bottom: 10%;
 }
 
@@ -1840,7 +1840,7 @@
 .bottom-15-em {
   bottom: 15em;
 }
-.bottom-15-\% {
+.bottom-15-pct {
   bottom: 15%;
 }
 
@@ -1859,7 +1859,7 @@
 .bottom-20-em {
   bottom: 20em;
 }
-.bottom-20-\% {
+.bottom-20-pct {
   bottom: 20%;
 }
 
@@ -1878,7 +1878,7 @@
 .bottom-25-em {
   bottom: 25em;
 }
-.bottom-25-\% {
+.bottom-25-pct {
   bottom: 25%;
 }
 
@@ -1897,7 +1897,7 @@
 .bottom-30-em {
   bottom: 30em;
 }
-.bottom-30-\% {
+.bottom-30-pct {
   bottom: 30%;
 }
 
@@ -1916,7 +1916,7 @@
 .bottom-35-em {
   bottom: 35em;
 }
-.bottom-35-\% {
+.bottom-35-pct {
   bottom: 35%;
 }
 
@@ -1935,7 +1935,7 @@
 .bottom-40-em {
   bottom: 40em;
 }
-.bottom-40-\% {
+.bottom-40-pct {
   bottom: 40%;
 }
 
@@ -1954,7 +1954,7 @@
 .bottom-45-em {
   bottom: 45em;
 }
-.bottom-45-\% {
+.bottom-45-pct {
   bottom: 45%;
 }
 
@@ -1973,7 +1973,7 @@
 .bottom-50-em {
   bottom: 50em;
 }
-.bottom-50-\% {
+.bottom-50-pct {
   bottom: 50%;
 }
 
@@ -1992,7 +1992,7 @@
 .right-0-em {
   right: 0em;
 }
-.right-0-\% {
+.right-0-pct {
   right: 0%;
 }
 
@@ -2011,7 +2011,7 @@
 .right-5-em {
   right: 5em;
 }
-.right-5-\% {
+.right-5-pct {
   right: 5%;
 }
 
@@ -2030,7 +2030,7 @@
 .right-10-em {
   right: 10em;
 }
-.right-10-\% {
+.right-10-pct {
   right: 10%;
 }
 
@@ -2049,7 +2049,7 @@
 .right-15-em {
   right: 15em;
 }
-.right-15-\% {
+.right-15-pct {
   right: 15%;
 }
 
@@ -2068,7 +2068,7 @@
 .right-20-em {
   right: 20em;
 }
-.right-20-\% {
+.right-20-pct {
   right: 20%;
 }
 
@@ -2087,7 +2087,7 @@
 .right-25-em {
   right: 25em;
 }
-.right-25-\% {
+.right-25-pct {
   right: 25%;
 }
 
@@ -2106,7 +2106,7 @@
 .right-30-em {
   right: 30em;
 }
-.right-30-\% {
+.right-30-pct {
   right: 30%;
 }
 
@@ -2125,7 +2125,7 @@
 .right-35-em {
   right: 35em;
 }
-.right-35-\% {
+.right-35-pct {
   right: 35%;
 }
 
@@ -2144,7 +2144,7 @@
 .right-40-em {
   right: 40em;
 }
-.right-40-\% {
+.right-40-pct {
   right: 40%;
 }
 
@@ -2163,7 +2163,7 @@
 .right-45-em {
   right: 45em;
 }
-.right-45-\% {
+.right-45-pct {
   right: 45%;
 }
 
@@ -2182,7 +2182,7 @@
 .right-50-em {
   right: 50em;
 }
-.right-50-\% {
+.right-50-pct {
   right: 50%;
 }
 
