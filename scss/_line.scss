@@ -1,0 +1,49 @@
+.#{$prefix}hairline {
+  &,
+  &-t,
+  &-r,
+  &-b,
+  &-l,
+  &-x,
+  &-y {
+    position: relative;
+    &:after {
+      position: absolute;
+      box-sizing: border-box;
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      content: ' ';
+      pointer-events: none;
+      top: -50%;
+      right: -50%;
+      bottom: -50%;
+      left: -50%;
+      border: 0 solid #eee;
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+  }
+  &:after {
+    border-width: 1px;
+  }
+  &-t:after {
+    border-top-width: 1px;
+  }
+  &-l:after {
+    border-left-width: 1px;
+  }
+  &-r:after {
+    border-right-width: 1px;
+  }
+  &-b:after {
+    border-bottom-width: 1px;
+  }
+  &-x:after {
+    border-left-width: 1px;
+    border-right-width: 1px;
+  }
+  &-y:after {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+}

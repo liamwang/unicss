@@ -6,3 +6,7 @@
 .#{$prefix}z-auto {
   z-index: auto;
 }
+
+.#{$prefix}z-max {
+  z-index: 9999;
+}

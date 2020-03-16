@@ -1,9 +1,7 @@
-$sides: (
-  t: top,
-  r: right,
-  b: bottom,
-  l: left
-);
+$prefix: '' !default;
+
+$sides: ((t, top) (r, right) (b, bottom) (l, left));
+$corners: ((tl, top-left) (tr, top-right) (bl, bottom-left) (br, bottom-right));
 
 $breakpoints: (
   sm: 576px,
@@ -21,5 +19,31 @@ $measures: (
   \%: '%'
 ) !default;
 
-// "raisincss-" will make e.g. .flex class look like .raisincss-flex
-$prefix: '' !default;
+$border-radiuses: ((0, 0) (sm, 0.125rem) (md, 0.25rem) (lg, 0.5rem) (full, 50%) (pill, 99999px)) !default;
+$border-width-unit: px !default;
+$border-width-values: (1, 2, 3, 4, 5) !default;
+
+$spaces: (
+  (0, 0),
+  (xs, 0.25rem),
+  (sm, 0.5rem),
+  (md, 0.75rem),
+  (lg, 1rem),
+  (xl, 1.25rem),
+  (2xl, 1.5rem),
+  (3xl, 1.75rem),
+  (4xl, 2rem),
+  (5xl, 2.25rem)
+) !default;
+
+$fontSizes: (
+  (xs, 0.75rem),
+  (sm, 0.875rem),
+  (md, 1rem),
+  (lg, 1.125rem),
+  (xl, 1.125rem),
+  (2xl, 1.5rem),
+  (3xl, 1.875rem),
+  (4xl, 2.25rem),
+  (5xl, 3rem)
+) !default;

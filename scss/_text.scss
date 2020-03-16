@@ -1,4 +1,4 @@
-.#{$prefix}text {
+.#{$prefix}txt {
   @each $value in (center, left, right, justify) {
     &-#{$value} {
       text-align: $value;
@@ -18,14 +18,26 @@
   }
 
   &-break {
-    word-break: break-word !important;
-    overflow-wrap: break-word !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 }
 
 .#{$prefix}ellipsis {
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  display: block;
+  text-overflow: ellipsis;
+  &-2,
+  &-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+  &-2 {
+    -webkit-line-clamp: 2;
+  }
+  &-3 {
+    -webkit-line-clamp: 3;
+  }
 }

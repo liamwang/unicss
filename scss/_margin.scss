@@ -1,39 +1,33 @@
-$margins-and-letters: ((top, t) (right, r) (bottom, b) (left, l));
-
 .#{$prefix}m {
-  @for $n from 0 through 12 {
-    &-#{$n} {
-      margin: $n * 0.25rem;
+  @each $space-abbr, $space-value in $spaces {
+    &-#{$space-abbr} {
+      margin: $space-value;
     }
-
-    @each $margin, $letter in $margins-and-letters {
-      &#{$letter}-#{$n} {
-        margin-#{$margin}: $n * 0.25rem;
+    @each $side-abbr, $side-name in $sides {
+      &-#{$side-abbr}-#{$space-abbr} {
+        margin-#{$side-name}: $space-value;
       }
     }
   }
-
-  &x {
-    @for $n from 0 through 12 {
-      &-#{$n} {
-        margin-left: $n * 0.25rem;
-        margin-right: $n * 0.25rem;
+  &-x {
+    @each $space-abbr, $space-value in $spaces {
+      &-#{$space-abbr} {
+        margin-left: $space-value;
+        margin-right: $space-value;
       }
     }
-
     &-auto {
       margin-left: auto;
       margin-right: auto;
     }
   }
-  &y {
-    @for $n from 0 through 12 {
-      &-#{$n} {
-        margin-top: $n * 0.25rem;
-        margin-bottom: $n * 0.25rem;
+  &-y {
+    @each $space-abbr, $space-value in $spaces {
+      &-#{$space-abbr} {
+        margin-top: $space-value;
+        margin-bottom: $space-value;
       }
     }
-
     &-auto {
       margin-top: auto;
       margin-bottom: auto;

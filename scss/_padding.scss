@@ -1,31 +1,27 @@
-$paddings-and-letters: ((top, t) (right, r) (bottom, b) (left, l)) !default;
-
 .#{$prefix}p {
-  @for $n from 0 through 12 {
-    &-#{$n} {
-      padding: $n * 0.25rem;
+  @each $space-abbr, $space-value in $spaces {
+    &-#{$space-abbr} {
+      padding: $space-value;
     }
-
-    @each $padding, $letter in $paddings-and-letters {
-      &#{$letter}-#{$n} {
-        padding-#{$padding}: $n * 0.25rem;
+    @each $side-abbr, $side-name in $sides {
+      &-#{$side-abbr}-#{$space-abbr} {
+        padding-#{$side-name}: $space-value;
       }
     }
   }
-
-  &x {
-    @for $n from 0 through 12 {
-      &-#{$n} {
-        padding-left: $n * 0.25rem;
-        padding-right: $n * 0.25rem;
+  &-x {
+    @each $space-abbr, $space-value in $spaces {
+      &-#{$space-abbr} {
+        padding-left: $space-value;
+        padding-right: $space-value;
       }
     }
   }
-  &y {
-    @for $n from 0 through 12 {
-      &-#{$n} {
-        padding-top: $n * 0.25rem;
-        padding-bottom: $n * 0.25rem;
+  &-y {
+    @each $space-abbr, $space-value in $spaces {
+      &-#{$space-abbr} {
+        padding-top: $space-value;
+        padding-bottom: $space-value;
       }
     }
   }

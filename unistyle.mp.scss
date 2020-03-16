@@ -1,4 +1,39 @@
-$radius-and-values: ((none, 0) (sm, 3rpx) (md, 5rpx) (lg, 10rpx) (full, 50%) (pill, 50rem));
+$border-radiuses: ((0, 0) (sm, 6rpx) (md, 12rpx) (lg, 24rpx) (full, 50%) (pill, 99999px));
+$border-width-unit: rpx;
+$border-width-values: (1, 2, 4, 6, 8) !default;
+
+$measures: (
+  vw: vw,
+  px: px,
+  vh: vh,
+  em: em,
+  \%: '%'
+);
+
+$spaces: (
+  (0, 0),
+  (xs, 10rpx),
+  (sm, 20rpx),
+  (df, 30rpx),
+  (md, 40rpx),
+  (lg, 50rpx),
+  (xl, 60rpx),
+  (2xl, 70rpx),
+  (3xl, 80rpx)
+);
+
+$fontSizes: (
+  (xs, 24rpx),
+  (sm, 26rpx),
+  (df, 28rpx),
+  (md, 30rpx),
+  (lg, 32rpx),
+  (xl, 34rpx),
+  (2xl, 36rpx),
+  (3xl, 38rpx),
+  (4xl, 40rpx),
+  (5xl, 44rpx)
+);
 
 // @import 'scss/setup';
 // @import 'scss/mixins';
@@ -27,3 +62,4 @@ $radius-and-values: ((none, 0) (sm, 3rpx) (md, 5rpx) (lg, 10rpx) (full, 50%) (pi
 @import 'scss/flex';
 @import 'scss/positioning';
 // @import 'scss/cursor';
+@import 'scss/line';
