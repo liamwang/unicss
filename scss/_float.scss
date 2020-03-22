@@ -1,13 +1,13 @@
 .#{$prefix}float {
-  @each $abbr, $value in (none: none, r: right, l: left) {
-    &-#{$abbr} {
+  @each $value in (none, right, left) {
+    &-#{$value} {
       float: $value;
     }
   }
 }
 
-.#{$prefix}clearfix:after {
-  content: '';
+.#{$prefix}clearfix::after {
+  content: ' ';
   display: table;
   clear: both;
 }

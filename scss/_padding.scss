@@ -1,25 +1,27 @@
+$sides: ((t, top) (r, right) (b, bottom) (l, left));
+
 .#{$prefix}p {
   @each $space-abbr, $space-value in $spaces {
-    &-#{$space-abbr} {
+    &#{$space-abbr} {
       padding: $space-value;
     }
     @each $side-abbr, $side-name in $sides {
-      &-#{$side-abbr}-#{$space-abbr} {
+      &#{$side-abbr}#{$space-abbr} {
         padding-#{$side-name}: $space-value;
       }
     }
   }
-  &-x {
+  &x {
     @each $space-abbr, $space-value in $spaces {
-      &-#{$space-abbr} {
+      &#{$space-abbr} {
         padding-left: $space-value;
         padding-right: $space-value;
       }
     }
   }
-  &-y {
+  &y {
     @each $space-abbr, $space-value in $spaces {
-      &-#{$space-abbr} {
+      &#{$space-abbr} {
         padding-top: $space-value;
         padding-bottom: $space-value;
       }

@@ -1,7 +1,9 @@
-.#{$prefix}d {
-  @each $value in (block, inline-block, inline, table, table-row, table-cell, none) {
-    &-#{$value} {
-      display: $value;
-    }
+@each $value in (block, inline-block, inline, flex, inline-flex, grid, table, table-row, table-cell) {
+  .#{$prefix}#{$value} {
+    display: $value;
   }
+}
+
+.#{$prefix}hidden {
+  display: none;
 }

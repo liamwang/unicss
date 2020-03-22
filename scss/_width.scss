@@ -1,10 +1,10 @@
-$widths-and-values: (
-  (0, 0) (1d2, 50%) (1d3, 33.33333%) (2d3, 66.66667%) (1d4, 25%) (3d4, 75%) (1d5, 20%) (2d5, 40%) (3d5, 60%) (4d5, 80%)
-    (1d6, 16.66667%) (full, 100%) (screen, 100vw) (auto, auto)
+$widths: (
+  (0, 0) (2by1, 50%) (3by1, 33.33333%) (3by2, 66.66667%) (4by1, 25%) (4by3, 75%) (5by1, 20%) (5by2, 40%) (5by3, 60%)
+    (5by4, 80%) (6by1, 16.66667%) (full, 100%) (screen, 100vw) (auto, auto)
 ) !default;
 
 .#{$prefix}w {
-  @each $width, $value in $widths-and-values {
+  @each $width, $value in $widths {
     &-#{$width} {
       width: $value;
     }

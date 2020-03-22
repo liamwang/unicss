@@ -1,5 +1,24 @@
+$values: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50) !default;
+
 @each $position in (static, fixed, absolute, relative, sticky) {
   .#{$prefix}#{$position} {
     position: $position;
+  }
+}
+
+@each $property in (top, left, bottom, right) {
+  .#{$prefix}#{$property} {
+    @each $space-abbr, $space-value in $spaces {
+      &#{$space-abbr} {
+        #{$property}: #{$space-value};
+      }
+    }
+    @each $n in $values {
+      @each $measure, $unit in $measures {
+        &-#{$n}-#{$measure} {
+          #{$property}: #{$n}#{$unit};
+        }
+      }
+    }
   }
 }

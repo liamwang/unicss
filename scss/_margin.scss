@@ -1,17 +1,19 @@
+$sides: ((t, top) (r, right) (b, bottom) (l, left));
+
 .#{$prefix}m {
   @each $space-abbr, $space-value in $spaces {
-    &-#{$space-abbr} {
+    &#{$space-abbr} {
       margin: $space-value;
     }
     @each $side-abbr, $side-name in $sides {
-      &-#{$side-abbr}-#{$space-abbr} {
+      &#{$side-abbr}#{$space-abbr} {
         margin-#{$side-name}: $space-value;
       }
     }
   }
-  &-x {
+  &x {
     @each $space-abbr, $space-value in $spaces {
-      &-#{$space-abbr} {
+      &#{$space-abbr} {
         margin-left: $space-value;
         margin-right: $space-value;
       }
@@ -21,16 +23,12 @@
       margin-right: auto;
     }
   }
-  &-y {
+  &y {
     @each $space-abbr, $space-value in $spaces {
-      &-#{$space-abbr} {
+      &#{$space-abbr} {
         margin-top: $space-value;
         margin-bottom: $space-value;
       }
-    }
-    &-auto {
-      margin-top: auto;
-      margin-bottom: auto;
     }
   }
 }

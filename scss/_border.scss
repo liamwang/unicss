@@ -1,15 +1,15 @@
+$sides: ((t, top) (r, right) (b, bottom) (l, left));
+$corners: ((tl, top-left) (tr, top-right) (bl, bottom-left) (br, bottom-right));
+
 .#{$prefix}bd {
-  border: 1 + $border-width-unit solid;
-
-  @each $abbr, $prop in $sides {
-    &-#{$abbr} {
-      border-#{$prop}: 1 + $border-width-unit solid;
+  @each $width-abbr, $width in $border-widths {
+    &#{$width-abbr} {
+      border: $width solid;
     }
-  }
-
-  @each $value in $border-width-values {
-    &-#{$value} {
-      border-width: $value + $border-width-unit;
+    @each $side-abbr, $side in $sides {
+      &#{$side-abbr}#{$width-abbr} {
+        border-#{$side}: $width solid;
+      }
     }
   }
 
@@ -19,18 +19,43 @@
     }
   }
 
-  @each $name, $value in $border-radiuses {
-    &-radius-#{$name} {
-      border-radius: $value;
-    }
-    @each $abbr, $corner in $corners {
-      &-radius-#{$abbr}-#{$name} {
-        border-#{$corner}-radius: $value;
-      }
+  &-hair,
+  &t-hair,
+  &r-hair,
+  &b-hair,
+  &l-hair {
+    position: relative;
+    &:after {
+      position: absolute;
+      box-sizing: border-box;
+      transform-origin: center;
+      content: ' ';
+      pointer-events: none;
+      top: -50%;
+      right: -50%;
+      bottom: -50%;
+      left: -50%;
+      border: 0 solid #eee;
+      transform: scale(0.5);
     }
   }
+  &-hair:after {
+    border-width: 1px;
+  }
+  @each $abbr, $prop in $sides {
+    &#{$abbr}-hair {
+      border-#{$prop}-width: 1px;
+    }
+  }
+}
 
-  &-none {
-    border: none;
+@each $radius-abbr, $radius-value in $border-radiuses {
+  .#{$prefix}rd#{$radius-abbr} {
+    border-radius: $radius-value;
+  }
+  @each $corner-abbr, $corner-value in $corners {
+    .#{$prefix}rd#{$corner-abbr}#{$radius-abbr} {
+      border-#{$corner-value}-radius: $radius-value;
+    }
   }
 }

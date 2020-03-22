@@ -1,0 +1,15 @@
+.#{$prefix}opacity {
+  @each $n in (0, 25, 50, 75, 100) {
+    &-#{$n} {
+      opacity: $n/100;
+    }
+  }
+}
+
+.#{$prefix}shadow {
+  @each $abbr, $value in $shadows {
+    &#{$abbr} {
+      box-shadow: $value;
+    }
+  }
+}

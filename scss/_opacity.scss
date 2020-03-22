@@ -1,7 +1,0 @@
-.#{$prefix}opacity {
-  @each $n in (0, 25, 50, 75, 100) {
-    &-#{$n} {
-      opacity: $n/100;
-    }
-  }
-}

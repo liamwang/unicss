@@ -1,7 +1,27 @@
 $prefix: '' !default;
 
-$sides: ((t, top) (r, right) (b, bottom) (l, left));
-$corners: ((tl, top-left) (tr, top-right) (bl, bottom-left) (br, bottom-right));
+$colors: (
+  white: #fff,
+  light: #f8f9fa,
+  gray: #8799a3,
+  dark: #343a40,
+  black: #000000,
+  gray-5: #fafafa,
+  gray-10: #f5f5f5,
+  gray-20: #eeeeee,
+  gray-30: #e0e0e0,
+  gray-40: #bdbdbd,
+  gray-50: #9e9e9e,
+  gray-60: #757575,
+  gray-70: #616161,
+  gray-80: #424242,
+  gray-90: #212121,
+  primary: #007bff,
+  secondary: #6c757d,
+  success: #28a745,
+  danger: #dc3545,
+  warning: #ffc107
+) !default;
 
 $breakpoints: (
   sm: 576px,
@@ -19,31 +39,62 @@ $measures: (
   pct: '%'
 ) !default;
 
-$border-radiuses: ((0, 0) (sm, 0.125rem) (md, 0.25rem) (lg, 0.5rem) (full, 50%) (pill, 99999px)) !default;
-$border-width-unit: px !default;
-$border-width-values: (1, 2, 3, 4, 5) !default;
-
-$spaces: (
-  (0, 0),
-  (xs, 0.25rem),
-  (sm, 0.5rem),
-  (md, 0.75rem),
-  (lg, 1rem),
-  (xl, 1.25rem),
-  (2xl, 1.5rem),
-  (3xl, 1.75rem),
-  (4xl, 2rem),
-  (5xl, 2.25rem)
+$border-radiuses: (
+  -sm: 0.125rem,
+  '': 0.25rem,
+  -md: 0.5rem,
+  -lg: 0.75rem,
+  -xl: 1rem,
+  -full: 50%,
+  -pill: 99999px,
+  -none: 0
 ) !default;
 
-$fontSizes: (
-  (xs, 0.75rem),
-  (sm, 0.875rem),
-  (md, 1rem),
-  (lg, 1.125rem),
-  (xl, 1.125rem),
-  (2xl, 1.5rem),
-  (3xl, 1.875rem),
-  (4xl, 2.25rem),
-  (5xl, 3rem)
+$border-widths: (
+  '': 1px,
+  -2: 2px,
+  -3: 3px,
+  -4: 4px,
+  -5: 5px,
+  -none: 0
+) !default;
+
+$spaces: (
+  -xs: 0.25rem,
+  -sm: 0.5rem,
+  '': 0.75rem,
+  -md: 1rem,
+  -lg: 1.25rem,
+  -xl: 1.5rem,
+  -2xl: 1.75rem,
+  -3xl: 2rem,
+  -4xl: 2.25rem,
+  -5xl: 2.5rem,
+  -none: 0
+) !default;
+
+$font-sizes: (
+  -xs: 0.75rem,
+  -sm: 0.875rem,
+  '': 1rem,
+  -md: 1.125rem,
+  -lg: 1.25rem,
+  -xl: 1.5rem,
+  -2xl: 1.875rem,
+  -3xl: 2.25rem,
+  -4xl: 3rem,
+  -5xl: 4rem
+) !default;
+
+$shadows: (
+  -xs: (0 0 0 1px rgba(0, 0, 0, 0.05)),
+  -sm: (0 1px 2px 0 rgba(0, 0, 0, 0.05)),
+  '': (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)),
+  -md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)),
+  -lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)),
+  -xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)),
+  -2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)),
+  -inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)),
+  -outline: (0 0 0 3px rgba(66, 153, 225, 0.5)),
+  -none: none
 ) !default;

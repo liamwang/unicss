@@ -13,12 +13,35 @@ $contents-and-values: (
 ) !default;
 
 .#{$prefix}flex {
-  display: flex;
+  &-initial {
+    flex: 0 1 auto;
+  }
+  &-1 {
+    flex: 1 1 0%;
+  }
+  &-auto {
+    flex: 1 1 auto;
+  }
+  &-none {
+    flex: none;
+  }
+
+  &-grow {
+    flex-grow: 1;
+    &-0 {
+      flex-grow: 0;
+    }
+  }
+  &-shrink {
+    flex-shrink: 1;
+    &-0 {
+      flex-shrink: 0;
+    }
+  }
 
   @each $direction in (row, column) {
     &-#{$direction} {
       flex-direction: $direction;
-
       &-reverse {
         flex-direction: $direction + -reverse;
       }
