@@ -1,8 +1,10 @@
-@import 'scss/setup';
+@import 'scss/constant';
+@import 'scss/variable';
 @import 'scss/mixins';
-@import 'scss/variables';
+@import 'scss/setup';
 @import 'scss/color';
 @import 'scss/display';
+@import 'scss/font';
 @import 'scss/float';
 @import 'scss/overflow';
 @import 'scss/position';
@@ -16,7 +18,6 @@
 @import 'scss/background';
 @import 'scss/border';
 @import 'scss/flex';
-@import 'scss/font';
 @import 'scss/list';
 @import 'scss/ratio';
 @import 'scss/container';
