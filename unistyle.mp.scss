@@ -18,9 +18,9 @@ $border-widths: (
   -3: 3px
 ) !default;
 
-$spaces: (-xs: 8rpx, -sm: 16rpx, '': 24rpx, -md: 32rpx, -lg: 40rpx, -xl: 48rpx, -2xl: 56rpx, -3xl: 64rpx) !default;
+$spaces: (-xs: 10rpx, -sm: 20rpx, '': 30rpx, -md: 40rpx, -lg: 50rpx, -xl: 60rpx) !default;
 
-$font-sizes: (-xs: 24rpx, -sm: 26rpx, '': 28rpx, -md: 32rpx, -lg: 36rpx, -xl: 40rpx, -2xl: 44rpx, -3xl: 46rpx) !default;
+$font-sizes: (-xs: 20rpx, -sm: 24rpx, '': 28rpx, -md: 32rpx, -lg: 36rpx, -xl: 40rpx, -2xl: 44rpx, -3xl: 46rpx) !default;
 
 $shadows: (
   -xs: (0 0 0 1rpx rgba(0, 0, 0, 0.05)),
